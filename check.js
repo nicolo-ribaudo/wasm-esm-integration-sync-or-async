@@ -1,5 +1,3 @@
-console.log({
-  jsSyncRun: globalThis.importJsSyncRun,
-  jsAsyncRun: globalThis.importAsSyncRun,
-  wasmRun: globalThis.importWasmRun
-})
+document.write("js-sync is sync? " + Boolean(globalThis.importJsSyncRun));
+document.write("js-async is sync? " + Boolean(globalThis.importJsAyncRun));
+document.write("wasm is sync? " + Boolean(globalThis.importWasmRun));
